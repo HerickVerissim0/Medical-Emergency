@@ -1,0 +1,16 @@
+{
+    "cmake.sourceDirectory": "C:/Users/Micro/Documents/FlutterProjeto/Flutter_Project/flutter_application_1/windows/flutter",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-17",
+            "path": "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.13.11-hotspot",
+            "default": true
+        }
+    ],
+    "java.jdt.ls.java.home": "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.13.11-hotspot",
+    "java.home": "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.13.11-hotspot",
+    "terminal.integrated.env.windows": {
+        "JAVA_HOME": "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.13.11-hotspot",
+        "PATH": "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.13.11-hotspot\\bin;${env:PATH}"
+    }
+}
