@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/customizacao/theme_provider.dart';
+import 'package:flutter_application_1/generated/l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 import 'fonte_letra.dart';
 
@@ -11,11 +12,12 @@ class ThemeCustomizationScreen extends StatelessWidget {
     final themeProvider = Provider.of<ThemeProvider>(context);
     final fontSizeProvider = Provider.of<FontSizeProvider>(context);
     final theme = Theme.of(context);
+    final l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Customização de Tema',
+          l10n.screenCustomization,
           style: TextStyle(
             color: theme.brightness == Brightness.dark
                 ? Colors.white
@@ -47,7 +49,7 @@ class ThemeCustomizationScreen extends StatelessWidget {
                   children: [
                     SwitchListTile(
                       title: Text(
-                        "Modo Escuro",
+                        l10n.darkMode,
                         style: TextStyle(
                           color: theme.brightness == Brightness.dark
                               ? Colors.white
@@ -55,7 +57,7 @@ class ThemeCustomizationScreen extends StatelessWidget {
                         ),
                       ),
                       subtitle: Text(
-                        "Altera as cores para um tema escuro",
+                        l10n.darkModeDesc,
                         style: TextStyle(
                           color: theme.brightness == Brightness.dark
                               ? Colors.white70
@@ -76,7 +78,7 @@ class ThemeCustomizationScreen extends StatelessWidget {
                     const Divider(),
                     SwitchListTile(
                       title: Text(
-                        "Alto Contraste",
+                        l10n.highContrast,
                         style: TextStyle(
                           color: theme.brightness == Brightness.dark
                               ? Colors.white
@@ -84,7 +86,7 @@ class ThemeCustomizationScreen extends StatelessWidget {
                         ),
                       ),
                       subtitle: Text(
-                        "Aumenta o contraste para melhor visibilidade",
+                        l10n.highContrastDesc,
                         style: TextStyle(
                           color: theme.brightness == Brightness.dark
                               ? Colors.white70
@@ -120,7 +122,7 @@ class ThemeCustomizationScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "Ajuste o tamanho da fonte",
+                        "fontSizeAdjustment",
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
@@ -170,7 +172,7 @@ class ThemeCustomizationScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 16),
                       Text(
-                        'Exemplo de texto com o tamanho atual',
+                        l10n.fontSizeExample,
                         style: TextStyle(
                           fontSize: fontSizeProvider.fontSize,
                           color: theme.brightness == Brightness.dark

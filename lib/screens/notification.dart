@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:flutter/services.dart';
+import 'package:flutter_application_1/generated/l10n/app_localizations.dart';
 
 class NotificationScreen extends StatefulWidget {
   const NotificationScreen({super.key});
@@ -52,7 +53,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
       }
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: const Text('Testando som e vibração!'),
+          content: Text(AppLocalizations.of(context)!.testingSoundVibration),
           backgroundColor: Theme.of(context).brightness == Brightness.dark
               ? const Color(0xFF1976D2)
               : Colors.blue[700],
@@ -62,7 +63,8 @@ class _NotificationScreenState extends State<NotificationScreen> {
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: const Text('Ative som ou vibração primeiro!'),
+          content:
+              Text(AppLocalizations.of(context)!.enableSoundVibrationFirst),
           backgroundColor: Theme.of(context).brightness == Brightness.dark
               ? const Color(0xFF1976D2)
               : Colors.blue[700],
@@ -75,6 +77,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final l10n = AppLocalizations.of(context)!;
 
     if (_isLoading) {
       return const Scaffold(
@@ -85,7 +88,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Notificações e Ajustes',
+          l10n.notificationsAndSettings,
           style: TextStyle(
             color: theme.brightness == Brightness.dark
                 ? Colors.white
@@ -138,7 +141,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Central de Notificações',
+                          l10n.notificationCenter,
                           style: theme.textTheme.titleMedium?.copyWith(
                             fontWeight: FontWeight.bold,
                             color: theme.brightness == Brightness.dark
@@ -148,7 +151,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                         ),
                         const SizedBox(height: 4),
                         Text(
-                          'Gerencie suas preferências de notificação',
+                          l10n.manageNotificationPreferences,
                           style: TextStyle(
                             color: theme.brightness == Brightness.dark
                                 ? Colors.white70
@@ -174,7 +177,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                 children: [
                   SwitchListTile(
                     title: Text(
-                      'Som',
+                      l10n.sound,
                       style: TextStyle(
                         color: theme.brightness == Brightness.dark
                             ? Colors.white
@@ -182,7 +185,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                       ),
                     ),
                     subtitle: Text(
-                      'Tocar som nas notificações',
+                      l10n.playNotificationSound,
                       style: TextStyle(
                         color: theme.brightness == Brightness.dark
                             ? Colors.white70
@@ -210,7 +213,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                   const Divider(height: 1),
                   SwitchListTile(
                     title: Text(
-                      'Vibração',
+                      l10n.vibration,
                       style: TextStyle(
                         color: theme.brightness == Brightness.dark
                             ? Colors.white
@@ -218,7 +221,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                       ),
                     ),
                     subtitle: Text(
-                      'Vibrar nas notificações',
+                      l10n.vibrateOnNotification,
                       style: TextStyle(
                         color: theme.brightness == Brightness.dark
                             ? Colors.white70

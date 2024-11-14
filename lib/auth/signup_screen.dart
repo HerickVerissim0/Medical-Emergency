@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/auth/auth_service.dart';
 
 import '../controller/onboarding_controller.dart';
-import '../widgets/custom_button.dart';
 import '../widgets/custom_textfield.dart';
 import 'login_screen.dart';
 

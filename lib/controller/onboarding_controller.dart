@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/onboarding/intro_page_1.dart';
 import 'package:flutter_application_1/onboarding/intro_page_2.dart';
 import 'package:flutter_application_1/onboarding/intro_page_3.dart';
-import 'package:flutter_application_1/onboarding/intro_page_4.dart';
+import 'package:flutter_application_1/onboarding/intro_page_language.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -55,7 +55,7 @@ class _OnboardingControllerState extends State<OnboardingController> {
                   IntroPage1(),
                   IntroPage2(),
                   IntroPage3(),
-                  IntroPage4(),
+                  IntroPageLanguage(),
                 ],
               ),
             ),

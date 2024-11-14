@@ -1,0 +1,143 @@
+{
+    "@@locale": "pt",
+    "language": "Idioma",
+    "@language": {
+        "description": "Seleção de idioma"
+    },
+    "settings": "Configurações",
+    "@settings": {
+        "description": "Título da tela de configurações"
+    },
+    "customization": "Personalização",
+    "@customization": {
+        "description": "Seção de personalização"
+    },
+    "notifications": "Notificações",
+    "@notifications": {
+        "description": "Seção de notificações"
+    },
+    "help": "Ajuda",
+    "@help": {
+        "description": "Seção de ajuda"
+    },
+    "appGuide": "Guia do Aplicativo",
+    "@appGuide": {
+        "description": "Título do guia do app"
+    },
+    "howToUse": "Como usar o app",
+    "@howToUse": {
+        "description": "Como usar o guia"
+    },
+    "welcome": "Bem-vindo ao Medical Emergency",
+    "@welcome": {
+        "description": "Mensagem de boas-vindas"
+    },
+    "emergencyProcedures": "Procedimentos de Emergência",
+    "@emergencyProcedures": {
+        "description": "Título dos procedimentos de emergência"
+    },
+    "essentialResources": "Recursos Essenciais",
+    "@essentialResources": {
+        "description": "Título dos recursos essenciais"
+    },
+    "screenCustomization": "Personalização de Tela",
+    "@screenCustomization": {
+        "description": "Título da personalização de tela"
+    },
+    "themes": "Temas, cores e fontes",
+    "@themes": {
+        "description": "Descrição dos temas"
+    },
+    "notificationSettings": "Notificações e Ajustes Rápidos",
+    "@notificationSettings": {
+        "description": "Título das configurações de notificação"
+    },
+    "manageAlerts": "Gerenciar alertas e sons",
+    "@manageAlerts": {
+        "description": "Descrição do gerenciamento de alertas"
+    },
+    "languageSection": "Idioma",
+    "@languageSection": {
+        "description": "Título da seção de idioma"
+    },
+    "chooseLanguage": "Escolher Idioma",
+    "@chooseLanguage": {
+        "description": "Título do diálogo de seleção de idioma"
+    },
+    "selectLanguage": "Selecionar Idioma",
+    "@selectLanguage": {
+        "description": "Opção de seleção de idioma"
+    },
+    "themeCustomization": "Customização de Tema",
+    "@themeCustomization": {
+        "description": "Título da tela de customização de tema"
+    },
+    "darkMode": "Modo Escuro",
+    "@darkMode": {
+        "description": "Opção de modo escuro"
+    },
+    "darkModeDesc": "Altera as cores para um tema escuro",
+    "@darkModeDesc": {
+        "description": "Descrição do modo escuro"
+    },
+    "highContrast": "Alto Contraste",
+    "@highContrast": {
+        "description": "Opção de alto contraste"
+    },
+    "highContrastDesc": "Aumenta o contraste para melhor visibilidade",
+    "@highContrastDesc": {
+        "description": "Descrição do alto contraste"
+    },
+    "fontSizeAdjustment": "Ajuste o tamanho da fonte",
+    "@fontSizeAdjustment": {
+        "description": "Título do ajuste de fonte"
+    },
+    "fontSizeExample": "Exemplo de texto com o tamanho atual",
+    "@fontSizeExample": {
+        "description": "Texto de exemplo do tamanho da fonte"
+    },
+    "notificationsAndSettings": "Notificações e Ajustes",
+    "@notificationsAndSettings": {
+        "description": "Título da tela de notificações"
+    },
+    "testingSoundVibration": "Testando som e vibração!",
+    "@testingSoundVibration": {
+        "description": "Mensagem ao testar som e vibração"
+    },
+    "enableSoundVibrationFirst": "Ative som ou vibração primeiro!",
+    "@enableSoundVibrationFirst": {
+        "description": "Mensagem quando som e vibra��ão estão desativados"
+    },
+    "notificationCenter": "Central de Notificações",
+    "@notificationCenter": {
+        "description": "Título da seção central de notificações"
+    },
+    "manageNotificationPreferences": "Gerencie suas preferências de notificação",
+    "@manageNotificationPreferences": {
+        "description": "Subtítulo da central de notificações"
+    },
+    "sound": "Som",
+    "@sound": {
+        "description": "Título da opção de som"
+    },
+    "playNotificationSound": "Tocar som nas notificações",
+    "@playNotificationSound": {
+        "description": "Descrição da opção de som"
+    },
+    "vibration": "Vibração",
+    "@vibration": {
+        "description": "Título da opção de vibração"
+    },
+    "vibrateOnNotification": "Vibrar nas notificações",
+    "@vibrateOnNotification": {
+        "description": "Descrição da opção de vibração"
+    },
+    "welcomeToMedicalEmergency": "Bem-vindo ao Medical Emergency",
+    "@welcomeToMedicalEmergency": {
+        "description": "Título de boas-vindas na página de introdução"
+    },
+    "emergencyGuideDescription": "Seu guia completo para situações de emergência médica",
+    "@emergencyGuideDescription": {
+        "description": "Texto de descrição na página de introdução"
+    }
+}

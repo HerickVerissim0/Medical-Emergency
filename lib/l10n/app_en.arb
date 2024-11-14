@@ -1,0 +1,143 @@
+{
+    "@@locale": "en",
+    "language": "Language",
+    "@language": {
+        "description": "Language selection"
+    },
+    "settings": "Settings",
+    "@settings": {
+        "description": "Settings screen title"
+    },
+    "customization": "Customization",
+    "@customization": {
+        "description": "Customization section"
+    },
+    "notifications": "Notifications",
+    "@notifications": {
+        "description": "Notifications section"
+    },
+    "help": "Help",
+    "@help": {
+        "description": "Help section"
+    },
+    "appGuide": "App Guide",
+    "@appGuide": {
+        "description": "App guide title"
+    },
+    "howToUse": "How to use the app",
+    "@howToUse": {
+        "description": "How to use guide"
+    },
+    "welcome": "Welcome to Medical Emergency",
+    "@welcome": {
+        "description": "Welcome message"
+    },
+    "emergencyProcedures": "Emergency Procedures",
+    "@emergencyProcedures": {
+        "description": "Emergency procedures title"
+    },
+    "essentialResources": "Essential Resources",
+    "@essentialResources": {
+        "description": "Essential resources title"
+    },
+    "screenCustomization": "Screen Customization",
+    "@screenCustomization": {
+        "description": "Screen customization title"
+    },
+    "themes": "Themes, colors and fonts",
+    "@themes": {
+        "description": "Themes description"
+    },
+    "notificationSettings": "Notifications and Quick Settings",
+    "@notificationSettings": {
+        "description": "Notification settings title"
+    },
+    "manageAlerts": "Manage alerts and sounds",
+    "@manageAlerts": {
+        "description": "Manage alerts description"
+    },
+    "languageSection": "Language",
+    "@languageSection": {
+        "description": "Language section title"
+    },
+    "chooseLanguage": "Choose Language",
+    "@chooseLanguage": {
+        "description": "Language selection dialog title"
+    },
+    "selectLanguage": "Select Language",
+    "@selectLanguage": {
+        "description": "Language selection option"
+    },
+    "themeCustomization": "Theme Customization",
+    "@themeCustomization": {
+        "description": "Theme customization screen title"
+    },
+    "darkMode": "Dark Mode",
+    "@darkMode": {
+        "description": "Dark mode option"
+    },
+    "darkModeDesc": "Change colors to a dark theme",
+    "@darkModeDesc": {
+        "description": "Dark mode description"
+    },
+    "highContrast": "High Contrast",
+    "@highContrast": {
+        "description": "High contrast option"
+    },
+    "highContrastDesc": "Increase contrast for better visibility",
+    "@highContrastDesc": {
+        "description": "High contrast description"
+    },
+    "fontSizeAdjustment": "Adjust font size",
+    "@fontSizeAdjustment": {
+        "description": "Font size adjustment title"
+    },
+    "fontSizeExample": "Example text with current size",
+    "@fontSizeExample": {
+        "description": "Font size example text"
+    },
+    "notificationsAndSettings": "Notifications and Settings",
+    "@notificationsAndSettings": {
+        "description": "Title for notifications screen"
+    },
+    "testingSoundVibration": "Testing sound and vibration!",
+    "@testingSoundVibration": {
+        "description": "Message when testing sound and vibration"
+    },
+    "enableSoundVibrationFirst": "Enable sound or vibration first!",
+    "@enableSoundVibrationFirst": {
+        "description": "Message when sound and vibration are disabled"
+    },
+    "notificationCenter": "Notification Center",
+    "@notificationCenter": {
+        "description": "Title for notification center section"
+    },
+    "manageNotificationPreferences": "Manage your notification preferences",
+    "@manageNotificationPreferences": {
+        "description": "Subtitle for notification center"
+    },
+    "sound": "Sound",
+    "@sound": {
+        "description": "Sound option title"
+    },
+    "playNotificationSound": "Play notification sound",
+    "@playNotificationSound": {
+        "description": "Sound option description"
+    },
+    "vibration": "Vibration",
+    "@vibration": {
+        "description": "Vibration option title"
+    },
+    "vibrateOnNotification": "Vibrate on notification",
+    "@vibrateOnNotification": {
+        "description": "Vibration option description"
+    },
+    "welcomeToMedicalEmergency": "Welcome to Medical Emergency",
+    "@welcomeToMedicalEmergency": {
+        "description": "Welcome title in intro page"
+    },
+    "emergencyGuideDescription": "Your complete guide for medical emergency situations",
+    "@emergencyGuideDescription": {
+        "description": "Description text in intro page"
+    }
+}
