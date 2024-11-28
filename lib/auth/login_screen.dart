@@ -241,7 +241,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   _loginWithGoogle() async {
     await _auth.signOutGoogle();
-    final userCredential = await _auth.loginWithGogle();
+    final userCredential = await _auth.loginWithGoogle();
 
     if (userCredential != null && userCredential.user != null) {
       log("User Logged In with Google");

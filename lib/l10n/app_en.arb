@@ -38,7 +38,7 @@
     },
     "essentialResources": "Essential Resources",
     "@essentialResources": {
-        "description": "Essential resources title"
+        "description": "Title for essential resources page"
     },
     "screenCustomization": "Screen Customization",
     "@screenCustomization": {
@@ -139,5 +139,364 @@
     "emergencyGuideDescription": "Your complete guide for medical emergency situations",
     "@emergencyGuideDescription": {
         "description": "Description text in intro page"
+    },
+    "emergencyProceduresTitle": "Emergency Procedures",
+    "@emergencyProceduresTitle": {
+        "description": "Title for emergency procedures page"
+    },
+    "cardiacSystem": "Cardiac System",
+    "@cardiacSystem": {
+        "description": "Title for cardiac procedures"
+    },
+    "cardiacDescription": "Learn about CPR and other cardiac procedures",
+    "@cardiacDescription": {
+        "description": "Description for cardiac procedures"
+    },
+    "respiratorySystem": "Respiratory System",
+    "@respiratorySystem": {
+        "description": "Title for respiratory procedures"
+    },
+    "respiratoryDescription": "Ventilation and clearance techniques",
+    "@respiratoryDescription": {
+        "description": "Description for respiratory procedures"
+    },
+    "allergicReaction": "Allergic Reaction",
+    "@allergicReaction": {
+        "description": "Title for allergy procedures"
+    },
+    "allergyDescription": "Protocols for anaphylaxis and severe allergies",
+    "@allergyDescription": {
+        "description": "Description for allergy procedures"
+    },
+    "consciousnessAlteration": "Consciousness Alteration",
+    "@consciousnessAlteration": {
+        "description": "Title for consciousness procedures"
+    },
+    "consciousnessDescription": "Management of unconscious patients",
+    "@consciousnessDescription": {
+        "description": "Description for consciousness procedures"
+    },
+    "emergencyContacts": "Emergency Contacts",
+    "@emergencyContacts": {
+        "description": "Title for emergency contacts"
+    },
+    "emergencyKit": "Emergency Kit",
+    "@emergencyKit": {
+        "description": "Title for emergency kit"
+    },
+    "basicLifeSupport": "Basic Life Support",
+    "@basicLifeSupport": {
+        "description": "Title for basic life support"
+    },
+    "essentialMedications": "Essential Medications",
+    "@essentialMedications": {
+        "description": "Title for essential medications"
+    },
+    "quickAccessDescription": "Quickly access important resources for emergency situations",
+    "@quickAccessDescription": {
+        "description": "Description for quick access to resources"
+    },
+    "account": "Account",
+    "@account": {
+        "description": "Title for account section"
+    },
+    "support": "Support",
+    "@support": {
+        "description": "Title for support section"
+    },
+    "information": "Information",
+    "@information": {
+        "description": "Title for information section"
+    },
+    "profile": "Profile",
+    "@profile": {
+        "description": "Title for profile settings"
+    },
+    "contactUs": "Contact Us",
+    "@contactUs": {
+        "description": "Title for the contact us screen"
+    },
+    "feedback": "Feedback",
+    "@feedback": {
+        "description": "Title for the feedback screen"
+    },
+    "appInfo": "App Information",
+    "@appInfo": {
+        "description": "Title for app information"
+    },
+    "references": "References",
+    "@references": {
+        "description": "Title for references section"
+    },
+    "logout": "Logout",
+    "@logout": {
+        "description": "Title for logout button"
+    },
+    "editProfile": "Edit personal information",
+    "@editProfile": {
+        "description": "Subtitle for editing personal information"
+    },
+    "contactUsSubtitle": "Talk to our team",
+    "@contactUsSubtitle": {
+        "description": "Subtitle for contact us option"
+    },
+    "feedbackSubtitle": "Rate our app",
+    "@feedbackSubtitle": {
+        "description": "Subtitle for feedback option"
+    },
+    "appInfoSubtitle": "Version and information",
+    "@appInfoSubtitle": {
+        "description": "Subtitle for app information"
+    },
+    "referencesSubtitle": "Sources and bibliography",
+    "@referencesSubtitle": {
+        "description": "Subtitle for references section"
+    },
+    "myProfile": "My Profile",
+    "@myProfile": {
+        "description": "Title for the profile screen"
+    },
+    "editName": "Edit Name",
+    "@editName": {
+        "description": "Title for editing the user's name"
+    },
+    "updateName": "Name updated!",
+    "@updateName": {
+        "description": "Message when the name is updated"
+    },
+    "specialty": "Specialty",
+    "@specialty": {
+        "description": "Title for the specialty field"
+    },
+    "updateSpecialty": "Specialty updated!",
+    "@updateSpecialty": {
+        "description": "Message when the specialty is updated"
+    },
+    "changePassword": "Change Password",
+    "@changePassword": {
+        "description": "Title for changing the password"
+    },
+    "updatePassword": "Password updated!",
+    "@updatePassword": {
+        "description": "Message when the password is updated"
+    },
+    "updateProfilePicture": "Update Profile Picture",
+    "@updateProfilePicture": {
+        "description": "Title for updating the profile picture"
+    },
+    "chooseFromGallery": "Choose from Gallery",
+    "@chooseFromGallery": {
+        "description": "Option to choose an image from the gallery"
+    },
+    "takePhoto": "Take Photo",
+    "@takePhoto": {
+        "description": "Option to take a new photo"
+    },
+    "currentPassword": "Current Password",
+    "@currentPassword": {
+        "description": "Label for current password field"
+    },
+    "newPassword": "New Password",
+    "@newPassword": {
+        "description": "Label for new password field"
+    },
+    "confirmNewPassword": "Confirm New Password",
+    "@confirmNewPassword": {
+        "description": "Label for confirming new password"
+    },
+    "passwordsDoNotMatch": "Passwords do not match",
+    "@passwordsDoNotMatch": {
+        "description": "Error message when passwords do not match"
+    },
+    "yourEmail": "Your Email",
+    "@yourEmail": {
+        "description": "Label for the email field"
+    },
+    "yourMessage": "Your Message",
+    "@yourMessage": {
+        "description": "Label for the message field"
+    },
+    "sendMessage": "Send Message",
+    "@sendMessage": {
+        "description": "Button text for sending the message"
+    },
+    "messageSent": "Message sent successfully!",
+    "@messageSent": {
+        "description": "Message displayed when the message is sent successfully"
+    },
+    "messageSendError": "Error sending message. Please try again.",
+    "@messageSendError": {
+        "description": "Message displayed when there is an error sending the message"
+    },
+    "emptyMessage": "Please enter a message.",
+    "@emptyMessage": {
+        "description": "Message displayed when the message field is empty"
+    },
+    "howCanWeHelp": "How can we help?",
+    "@howCanWeHelp": {
+        "description": "Header text for the help section"
+    },
+    "responseTime": "Our team will respond within 24 hours.",
+    "@responseTime": {
+        "description": "Text indicating the response time"
+    },
+    "hintMessage": "Type your message here...",
+    "@hintMessage": {
+        "description": "Hint text for the message input field"
+    },
+    "emptyFeedback": "Please write your feedback.",
+    "@emptyFeedback": {
+        "description": "Message displayed when feedback field is empty"
+    },
+    "feedbackSent": "Feedback sent! Thank you!",
+    "@feedbackSent": {
+        "description": "Message displayed when feedback is successfully sent"
+    },
+    "errorSendingFeedback": "Error sending feedback: {error}",
+    "@errorSendingFeedback": {
+        "description": "Message displayed when there is an error sending feedback",
+        "placeholders": {
+            "error": {}
+        }
+    },
+    "yourOpinionIsImportant": "Your opinion is very important!",
+    "@yourOpinionIsImportant": {
+        "description": "Header text for the feedback section"
+    },
+    "helpUsImprove": "Help us improve our app",
+    "@helpUsImprove": {
+        "description": "Subheader text for the feedback section"
+    },
+    "leaveYourComment": "Leave your comment:",
+    "@leaveYourComment": {
+        "description": "Label for the comment section"
+    },
+    "rating": "Rating:",
+    "@rating": {
+        "description": "Label for the rating section"
+    },
+    "sendFeedback": "Send Feedback",
+    "@sendFeedback": {
+        "description": "Button text for sending feedback"
+    },
+    "writeYourComments": "Write your comments here",
+    "@writeYourComments": {
+        "description": "Hint text for the comment input field"
+    },
+    "appInfoTitle": "App Information",
+    "@appInfoTitle": {
+        "description": "Title for the app information screen"
+    },
+    "aboutApp": "About the App",
+    "@aboutApp": {
+        "description": "Section title for about the app"
+    },
+    "description": "An app to assist in medical emergency situations",
+    "@description": {
+        "description": "Description of the app"
+    },
+    "contactInfo": "Contact Information",
+    "@contactInfo": {
+        "description": "Section title for contact information"
+    },
+    "email": "Email",
+    "@email": {
+        "description": "Label for email contact"
+    },
+    "website": "Website",
+    "@website": {
+        "description": "Label for website contact"
+    },
+    "developers": "Developers",
+    "@developers": {
+        "description": "Section title for developers"
+    },
+    "team": "Team",
+    "@team": {
+        "description": "Label for the development team"
+    },
+    "technologies": "Technologies",
+    "@technologies": {
+        "description": "Label for technologies used"
+    },
+    "termsOfUse": "Terms of Use",
+    "@termsOfUse": {
+        "description": "Title for terms of use"
+    },
+    "privacyPolicy": "Privacy Policy",
+    "@privacyPolicy": {
+        "description": "Title for privacy policy"
+    },
+    "version": "Version 1.0.0",
+    "@version": {
+        "description": "App version"
+    },
+    "termsOfUseContent": "Terms of Use for Medical Emergency\n\nThis document establishes the terms and conditions for the use of the application:\n\n1. Acceptance of Terms\n   By using this application, you automatically agree to these terms of use.\n\n2. Use of the Application\n   This application is intended for informational purposes only and does not replace professional medical consultation.\n\n3. Responsibilities\n   We are not responsible for decisions made based on the information provided by the application.\n\n4. Privacy\n   We respect your privacy in accordance with our privacy policy.\n\n5. Modifications\n   We reserve the right to modify these terms at any time without prior notice.",
+    "@termsOfUseContent": {
+        "description": "Content for the Terms of Use screen in English"
+    },
+    "privacyPolicyContent": "Privacy Policy for Medical Emergency\n\nThis document explains how we handle your information:\n\n1. Data Collection\n   We only collect data that is strictly necessary for the operation of the application.\n\n2. Use of Data\n   Your information is used solely to enhance your experience with the app.\n\n3. Data Protection\n   We implement robust security measures to protect your personal data.\n\n4. Sharing\n   We do not share your information with third parties without your express consent.\n\n5. Your Rights\n   You have the full right to access, correct, or request the deletion of your data.",
+    "@privacyPolicyContent": {
+        "description": "Content for the Privacy Policy screen in English"
+    },
+    "appTitle": "Medical Emergency",
+    "@appTitle": {
+        "description": "Title of the application in English"
+    },
+    "fearAnxiety": "Fear/Anxiety",
+    "@fearAnxiety": {
+        "description": "Label for Fear/Anxiety screen in English"
+    },
+    "medications": "Medications",
+    "@medications": {
+        "description": "Label for Medications screen in English"
+    },
+    "emergencyEquipment": "Emergency Equipment",
+    "@emergencyEquipment": {
+        "description": "Label for Emergency Equipment screen in English"
+    },
+    "sbv": "SBV",
+    "@sbv": {
+        "description": "Label for SBV screen in English"
+    },
+    "medicalEmergencies": "Medical Emergencies",
+    "@medicalEmergencies": {
+        "description": "Label for Medical Emergencies screen in English"
+    },
+    "favorite": "Favorite",
+    "@favorite": {
+        "description": "Label for Favorite section in English"
+    },
+    "specialtyGeneralPractitioner": "General Practitioner",
+    "@specialtyGeneralPractitioner": {
+        "description": "Label for General Practitioner specialty in English"
+    },
+    "specialtyOrthodontist": "Orthodontist",
+    "@specialtyOrthodontist": {
+        "description": "Label for Orthodontist specialty in English"
+    },
+    "specialtyEndodontist": "Endodontist",
+    "@specialtyEndodontist": {
+        "description": "Label for Endodontist specialty in English"
+    },
+    "specialtyPediatricDentist": "Pediatric Dentist",
+    "@specialtyPediatricDentist": {
+        "description": "Label for Pediatric Dentist specialty in English"
+    },
+    "specialtySurgeon": "Surgeon",
+    "@specialtySurgeon": {
+        "description": "Label for Surgeon specialty in English"
+    },
+    "specialtyProsthetist": "Prosthetist",
+    "@specialtyProsthetist": {
+        "description": "Label for Prosthetist specialty in English"
+    },
+    "specialtyPeriodontist": "Periodontist",
+    "@specialtyPeriodontist": {
+        "description": "Label for Periodontist specialty in English"
+    },
+    "specialtyUndefined": "Undefined",
+    "@specialtyUndefined": {
+        "description": "Label for undefined specialty in English"
     }
 }

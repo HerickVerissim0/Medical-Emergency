@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/generated/l10n/app_localizations.dart'; // Import correto
 
 class IntroPage1 extends StatelessWidget {
   const IntroPage1({super.key});
@@ -7,6 +8,7 @@ class IntroPage1 extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final size = MediaQuery.of(context).size;
+    final l10n = AppLocalizations.of(context)!; // Adicione esta linha
 
     return Scaffold(
       body: Container(
@@ -27,7 +29,7 @@ class IntroPage1 extends StatelessWidget {
 
             // Título de boas-vindas
             Text(
-              "Bem-vindo ao Medical Emergency",
+              l10n.welcomeToMedicalEmergency, // Atualizado
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 28,
@@ -44,7 +46,7 @@ class IntroPage1 extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Text(
-                "Seu guia completo para situações de emergência médica",
+                l10n.emergencyGuideDescription, // Atualizado
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 16,

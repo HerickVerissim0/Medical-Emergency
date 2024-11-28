@@ -3,6 +3,7 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import '../onboarding/intro_page_1.dart';
 import '../onboarding/intro_page_2.dart';
 import '../onboarding/intro_page_3.dart';
+import 'package:flutter_application_1/generated/l10n/app_localizations.dart';
 
 class AppGuideScreen extends StatefulWidget {
   const AppGuideScreen({super.key});
@@ -23,6 +24,7 @@ class _AppGuideScreenState extends State<AppGuideScreen> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
       appBar: AppBar(
@@ -38,7 +40,7 @@ class _AppGuideScreenState extends State<AppGuideScreen> {
           onPressed: () => Navigator.pop(context),
         ),
         title: Text(
-          'Guia do Aplicativo',
+          l10n.appGuide,
           style: TextStyle(
             color: theme.brightness == Brightness.dark
                 ? Colors.white

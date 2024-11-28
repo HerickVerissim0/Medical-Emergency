@@ -60,7 +60,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   bottomRight: Radius.circular(40),
                 ),
               ),
-              child: Column(
+              child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
@@ -68,7 +68,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     size: 50,
                     color: Colors.white,
                   ),
-                  const SizedBox(height: 10),
+                  SizedBox(height: 10),
                   Text(
                     "Medical Emergency",
                     style: TextStyle(

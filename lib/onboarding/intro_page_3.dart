@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/generated/l10n/app_localizations.dart';
 
 class IntroPage3 extends StatelessWidget {
   const IntroPage3({super.key});
@@ -7,6 +8,7 @@ class IntroPage3 extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final size = MediaQuery.of(context).size;
+    final l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
       body: Container(
@@ -15,7 +17,7 @@ class IntroPage3 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "Recursos Essenciais",
+              l10n.essentialResources,
               style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
@@ -37,25 +39,25 @@ class IntroPage3 extends StatelessWidget {
                 _buildResourceCard(
                   context,
                   icon: Icons.phone_in_talk,
-                  title: "Contatos de\nEmergência",
+                  title: l10n.emergencyContacts,
                   color: Colors.red,
                 ),
                 _buildResourceCard(
                   context,
                   icon: Icons.medical_services_outlined,
-                  title: "Kit de\nEmergência",
+                  title: l10n.emergencyKit,
                   color: Colors.green,
                 ),
                 _buildResourceCard(
                   context,
                   icon: Icons.favorite_border,
-                  title: "Suporte Básico\nde Vida",
+                  title: l10n.basicLifeSupport,
                   color: Colors.orange,
                 ),
                 _buildResourceCard(
                   context,
                   icon: Icons.medication_outlined,
-                  title: "Medicamentos\nEssenciais",
+                  title: l10n.essentialMedications,
                   color: Colors.blue,
                 ),
               ],
@@ -65,7 +67,7 @@ class IntroPage3 extends StatelessWidget {
 
             // Texto explicativo
             Text(
-              "Acesse rapidamente recursos importantes para situações de emergência",
+              l10n.quickAccessDescription,
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 16,

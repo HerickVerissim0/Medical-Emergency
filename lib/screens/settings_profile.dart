@@ -4,6 +4,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:io';
+import 'package:flutter_application_1/generated/l10n/app_localizations.dart';
 
 class SettingsProfile extends StatefulWidget {
   const SettingsProfile({super.key});
@@ -31,17 +32,18 @@ class _SettingsProfileState extends State<SettingsProfile> {
     });
   }
 
-  String _getSpecialtyLabel(String value) {
+  String _getSpecialtyLabel(String value, BuildContext context) {
     final Map<String, String> specialties = {
-      'clinico': 'Clínico Geral',
-      'ortodontista': 'Ortodontista',
-      'endodontista': 'Endodontista',
-      'pediatra': 'Odontopediatra',
-      'cirurgiao': 'Cirurgião',
-      'protesista': 'Protesista',
-      'periodontista': 'Periodontista',
+      'clinico': AppLocalizations.of(context)!.specialtyGeneralPractitioner,
+      'ortodontista': AppLocalizations.of(context)!.specialtyOrthodontist,
+      'endodontista': AppLocalizations.of(context)!.specialtyEndodontist,
+      'pediatra': AppLocalizations.of(context)!.specialtyPediatricDentist,
+      'cirurgiao': AppLocalizations.of(context)!.specialtySurgeon,
+      'protesista': AppLocalizations.of(context)!.specialtyProsthetist,
+      'periodontista': AppLocalizations.of(context)!.specialtyPeriodontist,
     };
-    return specialties[value] ?? 'Não definida';
+    return specialties[value] ??
+        AppLocalizations.of(context)!.specialtyUndefined;
   }
 
   void _changeProfilePicture() {
@@ -53,7 +55,7 @@ class _SettingsProfileState extends State<SettingsProfile> {
           children: [
             ListTile(
               leading: const Icon(Icons.photo_library),
-              title: const Text('Escolher da Galeria'),
+              title: Text(AppLocalizations.of(context)!.chooseFromGallery),
               onTap: () {
                 Navigator.pop(context);
                 _pickImage(ImageSource.gallery);
@@ -61,7 +63,7 @@ class _SettingsProfileState extends State<SettingsProfile> {
             ),
             ListTile(
               leading: const Icon(Icons.camera_alt),
-              title: const Text('Tirar Foto'),
+              title: Text(AppLocalizations.of(context)!.takePhoto),
               onTap: () {
                 Navigator.pop(context);
                 _pickImage(ImageSource.camera);
@@ -119,7 +121,7 @@ class _SettingsProfileState extends State<SettingsProfile> {
       context: context,
       builder: (context) => AlertDialog(
         title: Text(
-          'Editar Nome',
+          AppLocalizations.of(context)!.editName,
           style: TextStyle(
             color: theme.brightness == Brightness.dark
                 ? Colors.white
@@ -171,7 +173,7 @@ class _SettingsProfileState extends State<SettingsProfile> {
                   setState(() {});
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
-                      content: const Text('Nome atualizado!'),
+                      content: Text(AppLocalizations.of(context)!.updateName),
                       backgroundColor: theme.brightness == Brightness.dark
                           ? const Color(0xFF1976D2)
                           : Colors.blue[700],
@@ -207,7 +209,7 @@ class _SettingsProfileState extends State<SettingsProfile> {
       context: context,
       builder: (context) => AlertDialog(
         title: Text(
-          'Editar Especialidade',
+          AppLocalizations.of(context)!.specialty,
           style: TextStyle(
             color: Theme.of(context).brightness == Brightness.dark
                 ? Colors.white
@@ -217,7 +219,7 @@ class _SettingsProfileState extends State<SettingsProfile> {
         content: DropdownButtonFormField<String>(
           value: _specialty,
           decoration: InputDecoration(
-            labelText: 'Especialidade',
+            labelText: AppLocalizations.of(context)!.specialty,
             labelStyle: TextStyle(
               color: Theme.of(context).brightness == Brightness.dark
                   ? Colors.white70
@@ -235,7 +237,7 @@ class _SettingsProfileState extends State<SettingsProfile> {
             DropdownMenuItem(
               value: 'clinico',
               child: Text(
-                'Clínico Geral',
+                AppLocalizations.of(context)!.specialtyGeneralPractitioner,
                 style: TextStyle(
                   color: Theme.of(context).brightness == Brightness.dark
                       ? Colors.white
@@ -246,7 +248,7 @@ class _SettingsProfileState extends State<SettingsProfile> {
             DropdownMenuItem(
               value: 'ortodontista',
               child: Text(
-                'Ortodontista',
+                AppLocalizations.of(context)!.specialtyOrthodontist,
                 style: TextStyle(
                   color: Theme.of(context).brightness == Brightness.dark
                       ? Colors.white
@@ -257,7 +259,7 @@ class _SettingsProfileState extends State<SettingsProfile> {
             DropdownMenuItem(
               value: 'endodontista',
               child: Text(
-                'Endodontista',
+                AppLocalizations.of(context)!.specialtyEndodontist,
                 style: TextStyle(
                   color: Theme.of(context).brightness == Brightness.dark
                       ? Colors.white
@@ -268,7 +270,7 @@ class _SettingsProfileState extends State<SettingsProfile> {
             DropdownMenuItem(
               value: 'pediatra',
               child: Text(
-                'Odontopediatra',
+                AppLocalizations.of(context)!.specialtyPediatricDentist,
                 style: TextStyle(
                   color: Theme.of(context).brightness == Brightness.dark
                       ? Colors.white
@@ -279,7 +281,7 @@ class _SettingsProfileState extends State<SettingsProfile> {
             DropdownMenuItem(
               value: 'cirurgiao',
               child: Text(
-                'Cirurgião',
+                AppLocalizations.of(context)!.specialtySurgeon,
                 style: TextStyle(
                   color: Theme.of(context).brightness == Brightness.dark
                       ? Colors.white
@@ -290,7 +292,7 @@ class _SettingsProfileState extends State<SettingsProfile> {
             DropdownMenuItem(
               value: 'protesista',
               child: Text(
-                'Protesista',
+                AppLocalizations.of(context)!.specialtyProsthetist,
                 style: TextStyle(
                   color: Theme.of(context).brightness == Brightness.dark
                       ? Colors.white
@@ -301,7 +303,7 @@ class _SettingsProfileState extends State<SettingsProfile> {
             DropdownMenuItem(
               value: 'periodontista',
               child: Text(
-                'Periodontista',
+                AppLocalizations.of(context)!.specialtyPeriodontist,
                 style: TextStyle(
                   color: Theme.of(context).brightness == Brightness.dark
                       ? Colors.white
@@ -345,7 +347,7 @@ class _SettingsProfileState extends State<SettingsProfile> {
       builder: (context) => SingleChildScrollView(
         child: AlertDialog(
           title: Text(
-            'Alterar Senha',
+            AppLocalizations.of(context)!.changePassword,
             style: TextStyle(
               color: theme.brightness == Brightness.dark
                   ? Colors.white
@@ -364,7 +366,7 @@ class _SettingsProfileState extends State<SettingsProfile> {
                       : Colors.black,
                 ),
                 decoration: InputDecoration(
-                  labelText: 'Senha atual',
+                  labelText: AppLocalizations.of(context)!.currentPassword,
                   labelStyle: TextStyle(
                     color: theme.brightness == Brightness.dark
                         ? Colors.white70
@@ -390,7 +392,7 @@ class _SettingsProfileState extends State<SettingsProfile> {
                       : Colors.black,
                 ),
                 decoration: InputDecoration(
-                  labelText: 'Nova senha',
+                  labelText: AppLocalizations.of(context)!.newPassword,
                   labelStyle: TextStyle(
                     color: theme.brightness == Brightness.dark
                         ? Colors.white70
@@ -416,7 +418,7 @@ class _SettingsProfileState extends State<SettingsProfile> {
                       : Colors.black,
                 ),
                 decoration: InputDecoration(
-                  labelText: 'Confirmar nova senha',
+                  labelText: AppLocalizations.of(context)!.confirmNewPassword,
                   labelStyle: TextStyle(
                     color: theme.brightness == Brightness.dark
                         ? Colors.white70
@@ -451,7 +453,10 @@ class _SettingsProfileState extends State<SettingsProfile> {
                 if (newPasswordController.text !=
                     confirmPasswordController.text) {
                   ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('As senhas não coincidem')),
+                    SnackBar(
+                      content: Text(
+                          AppLocalizations.of(context)!.passwordsDoNotMatch),
+                    ),
                   );
                   return;
                 }
@@ -496,7 +501,7 @@ class _SettingsProfileState extends State<SettingsProfile> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Meu Perfil',
+          AppLocalizations.of(context)!.myProfile,
           style: TextStyle(
             color: theme.brightness == Brightness.dark
                 ? Colors.white
@@ -612,7 +617,7 @@ class _SettingsProfileState extends State<SettingsProfile> {
                                   : Colors.blue[700],
                             ),
                             title: Text(
-                              "Nome de Usuário",
+                              AppLocalizations.of(context)!.editName,
                               style: TextStyle(
                                 color: theme.brightness == Brightness.dark
                                     ? Colors.white
@@ -620,7 +625,8 @@ class _SettingsProfileState extends State<SettingsProfile> {
                               ),
                             ),
                             subtitle: Text(
-                              user?.displayName ?? "Adicionar nome",
+                              user?.displayName ??
+                                  AppLocalizations.of(context)!.updateName,
                               style: TextStyle(
                                 color: theme.brightness == Brightness.dark
                                     ? Colors.white70
@@ -643,7 +649,7 @@ class _SettingsProfileState extends State<SettingsProfile> {
                                   : Colors.blue[700],
                             ),
                             title: Text(
-                              "Especialidade",
+                              AppLocalizations.of(context)!.specialty,
                               style: TextStyle(
                                 color: theme.brightness == Brightness.dark
                                     ? Colors.white
@@ -651,7 +657,7 @@ class _SettingsProfileState extends State<SettingsProfile> {
                               ),
                             ),
                             subtitle: Text(
-                              _getSpecialtyLabel(_specialty ?? ''),
+                              _getSpecialtyLabel(_specialty ?? '', context),
                               style: TextStyle(
                                 color: theme.brightness == Brightness.dark
                                     ? Colors.white70
@@ -674,7 +680,7 @@ class _SettingsProfileState extends State<SettingsProfile> {
                                   : Colors.blue[700],
                             ),
                             title: Text(
-                              "Alterar Senha",
+                              AppLocalizations.of(context)!.changePassword,
                               style: TextStyle(
                                 color: theme.brightness == Brightness.dark
                                     ? Colors.white
@@ -682,7 +688,7 @@ class _SettingsProfileState extends State<SettingsProfile> {
                               ),
                             ),
                             subtitle: Text(
-                              "Atualizar senha de acesso",
+                              AppLocalizations.of(context)!.updatePassword,
                               style: TextStyle(
                                 color: theme.brightness == Brightness.dark
                                     ? Colors.white70

@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:mailer/mailer.dart';
 import 'package:mailer/smtp_server.dart';
+import 'package:flutter_application_1/generated/l10n/app_localizations.dart';
 
 class ContactUsScreen extends StatelessWidget {
   const ContactUsScreen({super.key});
@@ -17,7 +18,7 @@ class ContactUsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Entre em Contato',
+          AppLocalizations.of(context)!.contactUs,
           style: TextStyle(
             color: Theme.of(context).brightness == Brightness.dark
                 ? Colors.white
@@ -53,7 +54,7 @@ class ContactUsScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 16),
                   Text(
-                    'Como podemos ajudar?',
+                    AppLocalizations.of(context)!.howCanWeHelp,
                     style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                           color: Theme.of(context).brightness == Brightness.dark
                               ? Colors.white
@@ -63,7 +64,7 @@ class ContactUsScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'Nossa equipe responderá em até 24 horas',
+                    AppLocalizations.of(context)!.responseTime,
                     style: TextStyle(
                       color: Theme.of(context).brightness == Brightness.dark
                           ? Colors.white70
@@ -82,7 +83,7 @@ class ContactUsScreen extends StatelessWidget {
                 children: [
                   // Email field
                   Text(
-                    'Seu e-mail',
+                    AppLocalizations.of(context)!.yourEmail,
                     style: Theme.of(context).textTheme.titleMedium?.copyWith(
                           color: Theme.of(context).brightness == Brightness.dark
                               ? Colors.white
@@ -119,7 +120,7 @@ class ContactUsScreen extends StatelessWidget {
 
                   // Message field
                   Text(
-                    'Sua mensagem',
+                    AppLocalizations.of(context)!.yourMessage,
                     style: Theme.of(context).textTheme.titleMedium?.copyWith(
                           color: Theme.of(context).brightness == Brightness.dark
                               ? Colors.white
@@ -144,7 +145,7 @@ class ContactUsScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(12),
                         borderSide: BorderSide.none,
                       ),
-                      hintText: 'Digite sua mensagem aqui...',
+                      hintText: AppLocalizations.of(context)!.hintMessage,
                       hintStyle: TextStyle(
                         color: Theme.of(context).brightness == Brightness.dark
                             ? Colors.white38
@@ -172,8 +173,8 @@ class ContactUsScreen extends StatelessWidget {
 
                               ScaffoldMessenger.of(context).showSnackBar(
                                 SnackBar(
-                                  content: const Text(
-                                      'Mensagem enviada com sucesso!'),
+                                  content: Text(AppLocalizations.of(context)!
+                                      .messageSent),
                                   backgroundColor:
                                       Theme.of(context).primaryColor,
                                   behavior: SnackBarBehavior.floating,
@@ -187,8 +188,8 @@ class ContactUsScreen extends StatelessWidget {
                             if (context.mounted) {
                               ScaffoldMessenger.of(context).showSnackBar(
                                 SnackBar(
-                                  content: const Text(
-                                      'Erro ao enviar mensagem. Tente novamente.'),
+                                  content: Text(AppLocalizations.of(context)!
+                                      .messageSendError),
                                   backgroundColor:
                                       Theme.of(context).colorScheme.error,
                                   behavior: SnackBarBehavior.floating,
@@ -202,8 +203,8 @@ class ContactUsScreen extends StatelessWidget {
                         } else {
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(
-                              content:
-                                  const Text('Por favor, digite uma mensagem.'),
+                              content: Text(
+                                  AppLocalizations.of(context)!.emptyMessage),
                               backgroundColor:
                                   Theme.of(context).colorScheme.error,
                               behavior: SnackBarBehavior.floating,
@@ -224,7 +225,7 @@ class ContactUsScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(12),
                         ),
                       ),
-                      child: const Text('Enviar Mensagem'),
+                      child: Text(AppLocalizations.of(context)!.sendMessage),
                     ),
                   ),
                 ],

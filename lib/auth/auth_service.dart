@@ -6,7 +6,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 class AuthService {
   final _auth = FirebaseAuth.instance;
 
-  Future<UserCredential?> loginWithGogle() async {
+  Future<UserCredential?> loginWithGoogle() async {
     try {
       final googleUser = await GoogleSignIn().signIn();
 
@@ -33,16 +33,15 @@ class AuthService {
     return null;
   }
 
-    Future<void> signOutGoogle() async {
+  Future<void> signOutGoogle() async {
     try {
-      await GoogleSignIn().signOut();  // Faz logout do Google
-      await GoogleSignIn().disconnect();  // Revoga as credenciais
-      await _auth.signOut();  // Faz logout do Firebase
+      await GoogleSignIn().signOut(); // Faz logout do Google
+      await GoogleSignIn().disconnect(); // Revoga as credenciais
+      await _auth.signOut(); // Faz logout do Firebase
     } catch (e) {
       log("Something went wrong during sign out");
     }
   }
-
 
   Future<User?> loginUserWithEmailAndPassword(
       String email, String password) async {

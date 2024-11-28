@@ -16,6 +16,7 @@ import 'package:flutter_application_1/screens/sbv.dart';
 import 'package:flutter_application_1/screens/search_icon.dart';
 import 'package:flutter_application_1/screens/sistema_cardiaco.dart';
 import 'package:flutter_application_1/screens/sistema_respiratorio.dart';
+import 'package:flutter_application_1/generated/l10n/app_localizations.dart';
 
 class HomeScreen extends StatelessWidget {
   static const double _iconSize = 50.0;
@@ -32,7 +33,7 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         title: Text(
-          'Medical Emergency',
+          AppLocalizations.of(context)!.appTitle, // Usando string localizada
           style: TextStyle(
             color: Theme.of(context).brightness == Brightness.dark
                 ? Colors.white
@@ -67,33 +68,80 @@ class HomeScreen extends StatelessWidget {
                   _buildIcon(
                       context,
                       Icons.sentiment_very_dissatisfied,
-                      "Medo/Ansiedade",
+                      AppLocalizations.of(context)!
+                          .fearAnxiety, // Usando string localizada
                       const MedoAnsiedadeScreen(),
                       Colors.blue),
-                  _buildIcon(context, Icons.favorite, "Sistema Cardíaco",
-                      const SistemaCardiacoScreen(), Colors.blue),
-                  _buildIcon(context, Icons.air, "Sistema Respiratório",
-                      const SistemaRespiratorioScreen(), Colors.blue),
-                  _buildIcon(context, Icons.warning, 'Reação Alérgica',
-                      const ReacaoAlergica(), Colors.blue),
-                  _buildIcon(context, Icons.contacts, 'Contatos de Emergência',
-                      const ContatosEmergencia(), Colors.red),
+                  _buildIcon(
+                      context,
+                      Icons.favorite,
+                      AppLocalizations.of(context)!
+                          .cardiacSystem, // Usando string localizada
+                      const SistemaCardiacoScreen(),
+                      Colors.blue),
+                  _buildIcon(
+                      context,
+                      Icons.air,
+                      AppLocalizations.of(context)!
+                          .respiratorySystem, // Usando string localizada
+                      const SistemaRespiratorioScreen(),
+                      Colors.blue),
+                  _buildIcon(
+                      context,
+                      Icons.warning,
+                      AppLocalizations.of(context)!
+                          .allergicReaction, // Usando string localizada
+                      const ReacaoAlergica(),
+                      Colors.blue),
+                  _buildIcon(
+                      context,
+                      Icons.contacts,
+                      AppLocalizations.of(context)!
+                          .emergencyContacts, // Usando string localizada
+                      const ContatosEmergencia(),
+                      Colors.red),
                   _buildIcon(
                       context,
                       Icons.psychology,
-                      'Alteração da Consciência',
+                      AppLocalizations.of(context)!
+                          .consciousnessAlteration, // Usando string localizada
                       const AlteracaoConsciencia(),
                       Colors.blue),
-                  _buildIcon(context, Icons.medical_services_outlined,
-                      'Medicamentos', const Medicamentos(), Colors.red),
-                  _buildIcon(context, Icons.devices_other, 'Equipamentos',
-                      EquipamentosEmergencia(), Colors.red),
-                  _buildIcon(context, Icons.healing, 'Kit de Emergência',
-                      KitEmergencia(), Colors.red),
-                  _buildIcon(context, Icons.medical_services, 'SBV', Sbv(),
+                  _buildIcon(
+                      context,
+                      Icons.medical_services_outlined,
+                      AppLocalizations.of(context)!
+                          .medications, // Usando string localizada
+                      const Medicamentos(),
                       Colors.red),
-                  _buildIcon(context, Icons.video_collection,
-                      'Emergências Médicas', PraticasMedicas(), Colors.red),
+                  _buildIcon(
+                      context,
+                      Icons.devices_other,
+                      AppLocalizations.of(context)!
+                          .emergencyEquipment, // Usando string localizada
+                      EquipamentosEmergencia(),
+                      Colors.red),
+                  _buildIcon(
+                      context,
+                      Icons.healing,
+                      AppLocalizations.of(context)!
+                          .emergencyKit, // Usando string localizada
+                      KitEmergencia(),
+                      Colors.red),
+                  _buildIcon(
+                      context,
+                      Icons.medical_services,
+                      AppLocalizations.of(context)!
+                          .sbv, // Usando string localizada
+                      Sbv(),
+                      Colors.red),
+                  _buildIcon(
+                      context,
+                      Icons.video_collection,
+                      AppLocalizations.of(context)!
+                          .medicalEmergencies, // Usando string localizada
+                      PraticasMedicas(),
+                      Colors.red),
                 ],
               ),
             ),
@@ -183,7 +231,8 @@ class HomeScreen extends StatelessWidget {
                 ? Colors.white70
                 : Colors.black54,
           ),
-          label: 'Favorite',
+          label: AppLocalizations.of(context)!
+              .favorite, // Usando string localizada
         ),
         BottomNavigationBarItem(
           icon: Icon(
@@ -192,7 +241,8 @@ class HomeScreen extends StatelessWidget {
                 ? Colors.white70
                 : Colors.black54,
           ),
-          label: 'Profile',
+          label:
+              AppLocalizations.of(context)!.profile, // Usando string localizada
         ),
         BottomNavigationBarItem(
           icon: Icon(
@@ -201,7 +251,8 @@ class HomeScreen extends StatelessWidget {
                 ? Colors.white70
                 : Colors.black54,
           ),
-          label: 'Settings',
+          label: AppLocalizations.of(context)!
+              .settings, // Usando string localizada
         ),
       ],
       onTap: (int index) {

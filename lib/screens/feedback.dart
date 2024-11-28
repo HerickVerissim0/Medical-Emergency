@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/generated/l10n/app_localizations.dart';
 
 class FeedbackUser extends StatefulWidget {
   const FeedbackUser({super.key});
@@ -19,8 +20,8 @@ class _FeedbackUserState extends State<FeedbackUser> {
     final feedback = _feedbackController.text;
     if (feedback.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Por favor, escreva seu feedback.'),
+        SnackBar(
+          content: Text(AppLocalizations.of(context)!.emptyFeedback),
           backgroundColor: Colors.red,
         ),
       );
@@ -46,8 +47,8 @@ class _FeedbackUserState extends State<FeedbackUser> {
         });
 
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Feedback enviado! Obrigado!'),
+          SnackBar(
+            content: Text(AppLocalizations.of(context)!.feedbackSent),
             backgroundColor: Colors.green,
           ),
         );
@@ -55,9 +56,11 @@ class _FeedbackUserState extends State<FeedbackUser> {
     } catch (e) {
       setState(() => _isLoading = false);
       if (context.mounted) {
+        final errorMessage =
+            AppLocalizations.of(context)!.errorSendingFeedback(e.toString());
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Erro ao enviar feedback: ${e.toString()}'),
+            content: Text(errorMessage),
             backgroundColor: Colors.red,
           ),
         );
@@ -72,7 +75,7 @@ class _FeedbackUserState extends State<FeedbackUser> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Feedback',
+          AppLocalizations.of(context)!.feedback,
           style: TextStyle(
             color: theme.brightness == Brightness.dark
                 ? Colors.white
@@ -107,7 +110,7 @@ class _FeedbackUserState extends State<FeedbackUser> {
                     ),
                     const SizedBox(height: 16),
                     Text(
-                      'Sua opinião é muito importante!',
+                      AppLocalizations.of(context)!.yourOpinionIsImportant,
                       style: theme.textTheme.titleLarge?.copyWith(
                         color: theme.brightness == Brightness.dark
                             ? Colors.white
@@ -118,7 +121,7 @@ class _FeedbackUserState extends State<FeedbackUser> {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      'Ajude-nos a melhorar nosso aplicativo',
+                      AppLocalizations.of(context)!.helpUsImprove,
                       style: TextStyle(
                         color: theme.brightness == Brightness.dark
                             ? Colors.white70
@@ -150,7 +153,7 @@ class _FeedbackUserState extends State<FeedbackUser> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'Deixe seu comentário:',
+                              AppLocalizations.of(context)!.leaveYourComment,
                               style: theme.textTheme.titleMedium?.copyWith(
                                 color: theme.brightness == Brightness.dark
                                     ? const Color(0xFF1976D2)
@@ -171,7 +174,8 @@ class _FeedbackUserState extends State<FeedbackUser> {
                                 border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(12),
                                 ),
-                                hintText: 'Escreva aqui seus comentários',
+                                hintText: AppLocalizations.of(context)!
+                                    .writeYourComments,
                                 hintStyle: TextStyle(
                                   color: theme.brightness == Brightness.dark
                                       ? Colors.white38
@@ -185,7 +189,7 @@ class _FeedbackUserState extends State<FeedbackUser> {
                             ),
                             const SizedBox(height: 24),
                             Text(
-                              'Avaliação:',
+                              AppLocalizations.of(context)!.rating,
                               style: theme.textTheme.titleMedium?.copyWith(
                                 color: theme.brightness == Brightness.dark
                                     ? const Color(0xFF1976D2)
@@ -241,7 +245,8 @@ class _FeedbackUserState extends State<FeedbackUser> {
                                                   Colors.white),
                                         ),
                                       )
-                                    : const Text('Enviar Feedback'),
+                                    : Text(AppLocalizations.of(context)!
+                                        .sendFeedback),
                               ),
                             ),
                           ],

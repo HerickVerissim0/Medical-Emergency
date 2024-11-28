@@ -106,7 +106,7 @@
     },
     "enableSoundVibrationFirst": "Ative som ou vibração primeiro!",
     "@enableSoundVibrationFirst": {
-        "description": "Mensagem quando som e vibra��ão estão desativados"
+        "description": "Mensagem quando som e vibração estão desativados"
     },
     "notificationCenter": "Central de Notificações",
     "@notificationCenter": {
@@ -139,5 +139,361 @@
     "emergencyGuideDescription": "Seu guia completo para situações de emergência médica",
     "@emergencyGuideDescription": {
         "description": "Texto de descrição na página de introdução"
+    },
+    "emergencyProceduresTitle": "Procedimentos de Emergência",
+    "@emergencyProceduresTitle": {
+        "description": "Título para página de procedimentos de emergência"
+    },
+    "cardiacSystem": "Sistema Cardíaco",
+    "@cardiacSystem": {
+        "description": "Título para procedimentos cardíacos"
+    },
+    "cardiacDescription": "Aprenda sobre PCR e outros procedimentos cardíacos",
+    "@cardiacDescription": {
+        "description": "Descrição para procedimentos cardíacos"
+    },
+    "respiratorySystem": "Sistema Respiratório",
+    "@respiratorySystem": {
+        "description": "Título para procedimentos respiratórios"
+    },
+    "respiratoryDescription": "Técnicas de ventilação e desobstrução",
+    "@respiratoryDescription": {
+        "description": "Descrição para procedimentos respiratórios"
+    },
+    "allergicReaction": "Reação Alérgica",
+    "@allergicReaction": {
+        "description": "Título para procedimentos alérgicos"
+    },
+    "allergyDescription": "Protocolos para anafilaxia e alergias graves",
+    "@allergyDescription": {
+        "description": "Descrição para procedimentos alérgicos"
+    },
+    "consciousnessAlteration": "Alteração da Consciência",
+    "@consciousnessAlteration": {
+        "description": "Título para procedimentos de consciência"
+    },
+    "consciousnessDescription": "Manejo de pacientes inconscientes",
+    "@consciousnessDescription": {
+        "description": "Descrição para procedimentos de consciência"
+    },
+    "emergencyContacts": "Contatos de Emergência",
+    "@emergencyContacts": {
+        "description": "Título para contatos de emergência"
+    },
+    "emergencyKit": "Kit de Emergência",
+    "@emergencyKit": {
+        "description": "Título para kit de emergência"
+    },
+    "basicLifeSupport": "Suporte Básico de Vida",
+    "@basicLifeSupport": {
+        "description": "Título para suporte básico de vida"
+    },
+    "essentialMedications": "Medicamentos Essenciais",
+    "@essentialMedications": {
+        "description": "Título para medicamentos essenciais"
+    },
+    "quickAccessDescription": "Acesse rapidamente recursos importantes para situações de emergência",
+    "@quickAccessDescription": {
+        "description": "Descrição para acesso rápido a recursos"
+    },
+    "account": "Conta",
+    "@account": {
+        "description": "Título da seção de conta"
+    },
+    "support": "Suporte",
+    "@support": {
+        "description": "Título da seção de suporte"
+    },
+    "information": "Informações",
+    "@information": {
+        "description": "Título da seção de informações"
+    },
+    "profile": "Perfil",
+    "@profile": {
+        "description": "Título para configurações de perfil"
+    },
+    "contactUs": "Entre em Contato",
+    "@contactUs": {
+        "description": "Título da tela de contato"
+    },
+    "feedback": "Feedback",
+    "@feedback": {
+        "description": "Título da tela de feedback"
+    },
+    "yourOpinionIsImportant": "Sua opinião é muito importante!",
+    "@yourOpinionIsImportant": {
+        "description": "Texto do cabeçalho para a seção de feedback"
+    },
+    "helpUsImprove": "Ajude-nos a melhorar nosso aplicativo",
+    "@helpUsImprove": {
+        "description": "Texto do subtítulo para a seção de feedback"
+    },
+    "leaveYourComment": "Deixe seu comentário:",
+    "@leaveYourComment": {
+        "description": "Rótulo para a seção de comentários"
+    },
+    "writeYourComments": "Escreva aqui seus comentários",
+    "@writeYourComments": {
+        "description": "Texto de dica para o campo de entrada de comentários"
+    },
+    "rating": "Avaliação:",
+    "@rating": {
+        "description": "Rótulo para a seção de avaliação"
+    },
+    "sendFeedback": "Enviar Feedback",
+    "@sendFeedback": {
+        "description": "Texto do botão para enviar feedback"
+    },
+    "feedbackSent": "Feedback enviado! Obrigado!",
+    "@feedbackSent": {
+        "description": "Mensagem exibida quando o feedback é enviado com sucesso"
+    },
+    "emptyFeedback": "Por favor, escreva seu feedback.",
+    "@emptyFeedback": {
+        "description": "Mensagem exibida quando o campo de feedback está vazio"
+    },
+    "errorSendingFeedback": "Erro ao enviar feedback: {error}",
+    "@errorSendingFeedback": {
+        "description": "Mensagem exibida quando há um erro ao enviar feedback",
+        "placeholders": {
+            "error": {}
+        }
+    },
+    "appInfo": "Informações do App",
+    "@appInfo": {
+        "description": "Título para informações do app"
+    },
+    "references": "Referências",
+    "@references": {
+        "description": "Título para seção de referências"
+    },
+    "logout": "Sair da conta",
+    "@logout": {
+        "description": "Título para botão de logout"
+    },
+    "editProfile": "Editar informações pessoais",
+    "@editProfile": {
+        "description": "Subtítulo para editar informações pessoais"
+    },
+    "contactUsSubtitle": "Fale com nossa equipe",
+    "@contactUsSubtitle": {
+        "description": "Subtítulo para opção de contato"
+    },
+    "feedbackSubtitle": "Avalie nosso aplicativo",
+    "@feedbackSubtitle": {
+        "description": "Subtítulo para opção de feedback"
+    },
+    "appInfoSubtitle": "Versão e informações",
+    "@appInfoSubtitle": {
+        "description": "Subtítulo para informações do app"
+    },
+    "referencesSubtitle": "Fontes e bibliografia",
+    "@referencesSubtitle": {
+        "description": "Subtítulo para seção de referências"
+    },
+    "myProfile": "Meu Perfil",
+    "@myProfile": {
+        "description": "Título da tela de perfil"
+    },
+    "editName": "Editar Nome",
+    "@editName": {
+        "description": "Título para editar o nome do usuário"
+    },
+    "updateName": "Nome atualizado!",
+    "@updateName": {
+        "description": "Mensagem quando o nome é atualizado"
+    },
+    "specialty": "Especialidade",
+    "@specialty": {
+        "description": "Título para o campo de especialidade"
+    },
+    "updateSpecialty": "Especialidade atualizada!",
+    "@updateSpecialty": {
+        "description": "Mensagem quando a especialidade é atualizada"
+    },
+    "changePassword": "Alterar Senha",
+    "@changePassword": {
+        "description": "Título para alterar a senha"
+    },
+    "updatePassword": "Senha atualizada!",
+    "@updatePassword": {
+        "description": "Mensagem quando a senha é atualizada"
+    },
+    "updateProfilePicture": "Atualizar Foto de Perfil",
+    "@updateProfilePicture": {
+        "description": "Título para atualizar a foto de perfil"
+    },
+    "chooseFromGallery": "Escolher da Galeria",
+    "@chooseFromGallery": {
+        "description": "Opção para escolher uma imagem da galeria"
+    },
+    "takePhoto": "Tirar Foto",
+    "@takePhoto": {
+        "description": "Opção para tirar uma nova foto"
+    },
+    "currentPassword": "Senha Atual",
+    "@currentPassword": {
+        "description": "Rótulo para o campo de senha atual"
+    },
+    "newPassword": "Nova Senha",
+    "@newPassword": {
+        "description": "Rótulo para o campo de nova senha"
+    },
+    "confirmNewPassword": "Confirmar Nova Senha",
+    "@confirmNewPassword": {
+        "description": "Rótulo para confirmar nova senha"
+    },
+    "passwordsDoNotMatch": "As senhas não coincidem",
+    "@passwordsDoNotMatch": {
+        "description": "Mensagem de erro quando as senhas não coincidem"
+    },
+    "yourEmail": "Seu E-mail",
+    "@yourEmail": {
+        "description": "Rótulo para o campo de e-mail"
+    },
+    "yourMessage": "Sua Mensagem",
+    "@yourMessage": {
+        "description": "Rótulo para o campo de mensagem"
+    },
+    "sendMessage": "Enviar Mensagem",
+    "@sendMessage": {
+        "description": "Texto do botão para enviar a mensagem"
+    },
+    "messageSent": "Mensagem enviada com sucesso!",
+    "@messageSent": {
+        "description": "Mensagem exibida quando a mensagem é enviada com sucesso"
+    },
+    "messageSendError": "Erro ao enviar mensagem. Tente novamente.",
+    "@messageSendError": {
+        "description": "Mensagem exibida quando há um erro ao enviar a mensagem"
+    },
+    "emptyMessage": "Por favor, digite uma mensagem.",
+    "@emptyMessage": {
+        "description": "Mensagem exibida quando o campo de mensagem está vazio"
+    },
+    "howCanWeHelp": "Como podemos ajudar?",
+    "@howCanWeHelp": {
+        "description": "Texto do cabeçalho para a seção de ajuda"
+    },
+    "responseTime": "Nossa equipe responderá em até 24 horas.",
+    "@responseTime": {
+        "description": "Texto indicando o tempo de resposta"
+    },
+    "hintMessage": "Digite sua mensagem aqui...",
+    "appInfoTitle": "Informações do App",
+    "@appInfoTitle": {
+        "description": "Título da tela de informações do app"
+    },
+    "aboutApp": "Sobre o Aplicativo",
+    "@aboutApp": {
+        "description": "Título da seção sobre o aplicativo"
+    },
+    "description": "Um aplicativo para auxiliar em situações de emergência médica",
+    "@description": {
+        "description": "Descrição do aplicativo"
+    },
+    "contactInfo": "Informações de Contato",
+    "@contactInfo": {
+        "description": "Título da seção de informações de contato"
+    },
+    "email": "E-mail",
+    "@email": {
+        "description": "Rótulo para contato por e-mail"
+    },
+    "website": "Site",
+    "@website": {
+        "description": "Rótulo para contato pelo site"
+    },
+    "developers": "Desenvolvedores",
+    "@developers": {
+        "description": "Título da seção de desenvolvedores"
+    },
+    "team": "Equipe",
+    "@team": {
+        "description": "Rótulo para a equipe de desenvolvimento"
+    },
+    "technologies": "Tecnologias",
+    "@technologies": {
+        "description": "Rótulo para tecnologias utilizadas"
+    },
+    "termsOfUse": "Termos de Uso",
+    "@termsOfUse": {
+        "description": "Título para os termos de uso"
+    },
+    "privacyPolicy": "Política de Privacidade",
+    "@privacyPolicy": {
+        "description": "Título para a política de privacidade"
+    },
+    "version": "Versão 1.0.0",
+    "@version": {
+        "description": "Versão do aplicativo"
+    },
+    "termsOfUseContent": "Termos de Uso do Medical Emergency\n\nEste documento estabelece os termos e condições para o uso do aplicativo:\n\n1. Aceitação dos Termos\n   Ao utilizar este aplicativo, você concorda automaticamente com estes termos de uso.\n\n2. Uso do Aplicativo\n   Este aplicativo destina-se apenas para fins informativos e não substitui uma consulta médica profissional.\n\n3. Responsabilidades\n   Não nos responsabilizamos por decisões tomadas com base nas informações fornecidas pelo aplicativo.\n\n4. Privacidade\n   Respeitamos sua privacidade de acordo com nossa política de privacidade.\n\n5. Modificações\n   Reservamos o direito de modificar estes termos a qualquer momento, sem aviso prévio.",
+    "@termsOfUseContent": {
+        "description": "Conteúdo para a tela de Termos de Uso em português"
+    },
+    "privacyPolicyContent": "Política de Privacidade do Medical Emergency\n\nEste documento explica como tratamos suas informações:\n\n1. Coleta de Dados\n   Coletamos apenas os dados estritamente necessários para o funcionamento do aplicativo.\n\n2. Uso dos Dados\n   Suas informações são utilizadas exclusivamente para melhorar sua experiência no app.\n\n3. Proteção de Dados\n   Implementamos medidas de segurança robustas para proteger seus dados pessoais.\n\n4. Compartilhamento\n   Não compartilhamos suas informações com terceiros sem seu consentimento expresso.\n\n5. Seus Direitos\n   Você tem total direito de acessar, corrigir ou solicitar a exclusão de seus dados.",
+    "@privacyPolicyContent": {
+        "description": "Conteúdo para a tela de Política de Privacidade em português"
+    },
+    "specialtyGeneralPractitioner": "Clínico Geral",
+    "@specialtyGeneralPractitioner": {
+        "description": "Label for General Practitioner specialty in Portuguese"
+    },
+    "specialtyOrthodontist": "Ortodontista",
+    "@specialtyOrthodontist": {
+        "description": "Label for Orthodontist specialty in Portuguese"
+    },
+    "specialtyEndodontist": "Endodontista",
+    "@specialtyEndodontist": {
+        "description": "Label for Endodontist specialty in Portuguese"
+    },
+    "specialtyPediatricDentist": "Odontopediatra",
+    "@specialtyPediatricDentist": {
+        "description": "Label for Pediatric Dentist specialty in Portuguese"
+    },
+    "specialtySurgeon": "Cirurgião",
+    "@specialtySurgeon": {
+        "description": "Label for Surgeon specialty in Portuguese"
+    },
+    "specialtyProsthetist": "Protesista",
+    "@specialtyProsthetist": {
+        "description": "Label for Prosthetist specialty in Portuguese"
+    },
+    "specialtyPeriodontist": "Periodontista",
+    "@specialtyPeriodontist": {
+        "description": "Label for Periodontist specialty in Portuguese"
+    },
+    "specialtyUndefined": "Não definida",
+    "@specialtyUndefined": {
+        "description": "Label for undefined specialty in Portuguese"
+    },
+    "appTitle": "Emergência Médica",
+    "@appTitle": {
+        "description": "Título do aplicativo em português"
+    },
+    "fearAnxiety": "Medo/Ansiedade",
+    "@fearAnxiety": {
+        "description": "Rótulo para a tela de Medo/Ansiedade em português"
+    },
+    "medications": "Medicamentos",
+    "@medications": {
+        "description": "Rótulo para a tela de Medicamentos em português"
+    },
+    "emergencyEquipment": "Equipamentos",
+    "@emergencyEquipment": {
+        "description": "Rótulo para a tela de Equipamentos em português"
+    },
+    "sbv": "SBV",
+    "@sbv": {
+        "description": "Rótulo para a tela de SBV em português"
+    },
+    "medicalEmergencies": "Emergências Médicas",
+    "@medicalEmergencies": {
+        "description": "Rótulo para a tela de Emergências Médicas em português"
+    },
+    "favorite": "Favorito",
+    "@favorite": {
+        "description": "Rótulo para a seção de Favoritos em português"
     }
 }

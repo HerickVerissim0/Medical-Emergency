@@ -7,6 +7,7 @@ import 'package:flutter_application_1/screens/feedback.dart';
 import 'package:flutter_application_1/screens/info_app.dart';
 import 'package:flutter_application_1/screens/settings_profile.dart';
 import 'package:flutter_application_1/widgets/home_screen.dart';
+import 'package:flutter_application_1/generated/l10n/app_localizations.dart';
 
 class Profile_Screen extends StatelessWidget {
   const Profile_Screen({super.key});
@@ -15,11 +16,11 @@ class Profile_Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     final user = FirebaseAuth.instance.currentUser;
     final theme = Theme.of(context);
+    final l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
       backgroundColor: theme.scaffoldBackgroundColor,
       appBar: PreferredSize(
-        // Adicione este AppBar
         preferredSize: const Size.fromHeight(24),
         child: AppBar(
           backgroundColor: Colors.transparent,
@@ -110,15 +111,15 @@ class Profile_Screen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    _buildSectionTitle(context, 'Conta'),
+                    _buildSectionTitle(context, l10n.account),
                     _buildMenuCard(
                       context,
                       [
                         _buildListTile(
                           context,
                           icon: Icons.person_outline,
-                          title: "Perfiil",
-                          subtitle: "Editar informações pessoais",
+                          title: l10n.profile,
+                          subtitle: l10n.editProfile,
                           onTap: () => Navigator.push(
                             context,
                             MaterialPageRoute(
@@ -130,15 +131,15 @@ class Profile_Screen extends StatelessWidget {
 
                     const SizedBox(height: 24),
 
-                    _buildSectionTitle(context, 'Suporte'),
+                    _buildSectionTitle(context, l10n.support),
                     _buildMenuCard(
                       context,
                       [
                         _buildListTile(
                           context,
                           icon: Icons.mail_outline,
-                          title: "Entre em contato conosco",
-                          subtitle: "Fale com nossa equipe",
+                          title: l10n.contactUs,
+                          subtitle: l10n.contactUsSubtitle,
                           onTap: () => Navigator.push(
                             context,
                             MaterialPageRoute(
@@ -148,8 +149,8 @@ class Profile_Screen extends StatelessWidget {
                         _buildListTile(
                           context,
                           icon: Icons.star_outline,
-                          title: "Feedback",
-                          subtitle: "Avalie nosso aplicativo",
+                          title: l10n.feedback,
+                          subtitle: l10n.feedbackSubtitle,
                           onTap: () => Navigator.push(
                             context,
                             MaterialPageRoute(
@@ -161,15 +162,15 @@ class Profile_Screen extends StatelessWidget {
 
                     const SizedBox(height: 24),
 
-                    _buildSectionTitle(context, 'Informações'),
+                    _buildSectionTitle(context, l10n.information),
                     _buildMenuCard(
                       context,
                       [
                         _buildListTile(
                           context,
                           icon: Icons.info_outline,
-                          title: "Informações do App",
-                          subtitle: "Versão e informações",
+                          title: l10n.appInfo,
+                          subtitle: l10n.appInfoSubtitle,
                           onTap: () => Navigator.push(
                             context,
                             MaterialPageRoute(
@@ -179,8 +180,8 @@ class Profile_Screen extends StatelessWidget {
                         _buildListTile(
                           context,
                           icon: Icons.book_outlined,
-                          title: "Referências",
-                          subtitle: "Fontes e bibliografia",
+                          title: l10n.references,
+                          subtitle: l10n.referencesSubtitle,
                           onTap: () {
                             // Implementar navegação
                           },
@@ -203,7 +204,7 @@ class Profile_Screen extends StatelessWidget {
                           );
                         },
                         icon: const Icon(Icons.logout),
-                        label: const Text('Sair da conta'),
+                        label: Text(l10n.logout),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xFFB71C1C),
                           foregroundColor: Colors.white,

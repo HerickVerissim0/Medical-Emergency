@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'termos_politica.dart'; // Importe a nova tela
+import 'package:flutter_application_1/generated/l10n/app_localizations.dart'; // Importando as localizações
 
 class AppInfoScreen extends StatelessWidget {
   const AppInfoScreen({super.key});
@@ -38,15 +39,16 @@ class AppInfoScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Icon(
-                            item['icon'] == 'email'
-                                ? Icons.email
-                                : item['icon'] == 'web'
-                                    ? Icons.language
-                                    : Icons.info,
-                            color: theme.brightness == Brightness.dark
-                                ? const Color(0xFF1976D2)
-                                : Colors.blue[700],
-                            size: 20),
+                          item['icon'] == 'email'
+                              ? Icons.email
+                              : item['icon'] == 'web'
+                                  ? Icons.language
+                                  : Icons.info,
+                          color: theme.brightness == Brightness.dark
+                              ? const Color(0xFF1976D2)
+                              : Colors.blue[700],
+                          size: 20,
+                        ),
                         const SizedBox(width: 8),
                         Expanded(
                           child: Text(
@@ -70,7 +72,8 @@ class AppInfoScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Informações do App',
+          AppLocalizations.of(context)!
+              .appInfoTitle, // Usando string localizada
           style: TextStyle(
             color: theme.brightness == Brightness.dark
                 ? Colors.white
@@ -123,7 +126,8 @@ class AppInfoScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      'Versão 1.0.0',
+                      AppLocalizations.of(context)!
+                          .version, // Usando string localizada
                       style: TextStyle(
                         color: theme.brightness == Brightness.dark
                             ? Colors.white70
@@ -141,44 +145,52 @@ class AppInfoScreen extends StatelessWidget {
                 child: Column(
                   children: [
                     _buildInfoSection(
-                      'Sobre o Aplicativo',
+                      AppLocalizations.of(context)!
+                          .aboutApp, // Usando string localizada
                       [
                         {
                           'icon': 'info',
-                          'label': 'Descrição',
-                          'value':
-                              'Um aplicativo para auxiliar em situações de emergência médica'
+                          'label': AppLocalizations.of(context)!
+                              .description, // Usando string localizada
+                          'value': AppLocalizations.of(context)!
+                              .description // Usando string localizada
                         },
                       ],
                     ),
                     const SizedBox(height: 16),
                     _buildInfoSection(
-                      'Informações de Contato',
+                      AppLocalizations.of(context)!
+                          .contactInfo, // Usando string localizada
                       [
                         {
                           'icon': 'email',
-                          'label': 'E-mail',
+                          'label': AppLocalizations.of(context)!
+                              .email, // Usando string localizada
                           'value': 'herickverissimo9@gmail.com'
                         },
                         {
                           'icon': 'web',
-                          'label': 'Site',
+                          'label': AppLocalizations.of(context)!
+                              .website, // Usando string localizada
                           'value': 'www.medicalemergency.com'
                         },
                       ],
                     ),
                     const SizedBox(height: 16),
                     _buildInfoSection(
-                      'Desenvolvedores',
+                      AppLocalizations.of(context)!
+                          .developers, // Usando string localizada
                       [
                         {
                           'icon': 'info',
-                          'label': 'Equipe',
+                          'label': AppLocalizations.of(context)!
+                              .team, // Usando string localizada
                           'value': 'Herick e Roberta'
                         },
                         {
                           'icon': 'info',
-                          'label': 'Tecnologias',
+                          'label': AppLocalizations.of(context)!
+                              .technologies, // Usando string localizada
                           'value': 'Flutter e Firebase'
                         },
                       ],
@@ -195,7 +207,8 @@ class AppInfoScreen extends StatelessWidget {
                                   : Colors.blue[700],
                             ),
                             title: Text(
-                              'Termos de Uso',
+                              AppLocalizations.of(context)!
+                                  .termsOfUse, // Usando string localizada
                               style: TextStyle(
                                 color: theme.brightness == Brightness.dark
                                     ? Colors.white
@@ -212,28 +225,11 @@ class AppInfoScreen extends StatelessWidget {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => const TermsPolicyScreen(
-                                    title: 'Termos de Uso',
-                                    content: '''
-Termos de Uso do Medical Emergency
-
-Este documento estabelece os termos e condições para o uso do aplicativo:
-
-1. Aceitação dos Termos
-   Ao utilizar este aplicativo, você concorda automaticamente com estes termos de uso.
-
-2. Uso do Aplicativo
-   Este aplicativo destina-se apenas para fins informativos e não substitui uma consulta médica profissional.
-
-3. Responsabilidades
-   Não nos responsabilizamos por decisões tomadas com base nas informações fornecidas pelo aplicativo.
-
-4. Privacidade
-   Respeitamos sua privacidade de acordo com nossa política de privacidade.
-
-5. Modificações
-   Reservamos o direito de modificar estes termos a qualquer momento, sem aviso prévio.
-''',
+                                  builder: (context) => TermsPolicyScreen(
+                                    title: AppLocalizations.of(context)!
+                                        .termsOfUse, // Usando string localizada
+                                    content: AppLocalizations.of(context)!
+                                        .termsOfUseContent, // Usando string localizada
                                   ),
                                 ),
                               );
@@ -246,34 +242,23 @@ Este documento estabelece os termos e condições para o uso do aplicativo:
                                   ? const Color(0xFF1976D2)
                                   : Colors.blue[700],
                             ),
-                            title: const Text('Política de Privacidade'),
-                            trailing: const Icon(Icons.chevron_right),
+                            title: Text(AppLocalizations.of(context)!
+                                .privacyPolicy), // Usando string localizada
+                            trailing: Icon(
+                              Icons.chevron_right,
+                              color: theme.brightness == Brightness.dark
+                                  ? const Color(0xFF1976D2)
+                                  : Colors.blue[700],
+                            ),
                             onTap: () {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => const TermsPolicyScreen(
-                                    title: 'Política de Privacidade',
-                                    content: '''
-Política de Privacidade do Medical Emergency
-
-Este documento explica como tratamos suas informações:
-
-1. Coleta de Dados
-   Coletamos apenas os dados estritamente necessários para o funcionamento do aplicativo.
-
-2. Uso dos Dados
-   Suas informações são utilizadas exclusivamente para melhorar sua experiência no app.
-
-3. Proteção de Dados
-   Implementamos medidas de segurança robustas para proteger seus dados pessoais.
-
-4. Compartilhamento
-   Não compartilhamos suas informações com terceiros sem seu consentimento expresso.
-
-5. Seus Direitos
-   Você tem total direito de acessar, corrigir ou solicitar a exclusão de seus dados.
-''',
+                                  builder: (context) => TermsPolicyScreen(
+                                    title: AppLocalizations.of(context)!
+                                        .privacyPolicy, // Usando string localizada
+                                    content: AppLocalizations.of(context)!
+                                        .privacyPolicyContent, // Usando string localizada
                                   ),
                                 ),
                               );

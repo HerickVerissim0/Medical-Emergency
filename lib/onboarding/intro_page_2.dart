@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/generated/l10n/app_localizations.dart';
 
 class IntroPage2 extends StatelessWidget {
   const IntroPage2({super.key});
@@ -7,6 +8,7 @@ class IntroPage2 extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final size = MediaQuery.of(context).size;
+    final l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
       body: Container(
@@ -15,7 +17,7 @@ class IntroPage2 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "Procedimentos de Emergência",
+              l10n.emergencyProceduresTitle,
               style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
@@ -31,8 +33,8 @@ class IntroPage2 extends StatelessWidget {
             _buildProcedureCard(
               context,
               icon: Icons.favorite,
-              title: "Sistema Cardíaco",
-              description: "Aprenda sobre PCR e outros procedimentos cardíacos",
+              title: l10n.cardiacSystem,
+              description: l10n.cardiacDescription,
             ),
 
             const SizedBox(height: 16),
@@ -40,8 +42,8 @@ class IntroPage2 extends StatelessWidget {
             _buildProcedureCard(
               context,
               icon: Icons.air,
-              title: "Sistema Respiratório",
-              description: "Técnicas de ventilação e desobstrução",
+              title: l10n.respiratorySystem,
+              description: l10n.respiratoryDescription,
             ),
 
             const SizedBox(height: 16),
@@ -49,8 +51,8 @@ class IntroPage2 extends StatelessWidget {
             _buildProcedureCard(
               context,
               icon: Icons.medical_services,
-              title: "Reação Alérgica",
-              description: "Protocolos para anafilaxia e alergias graves",
+              title: l10n.allergicReaction,
+              description: l10n.allergyDescription,
             ),
 
             const SizedBox(height: 16),
@@ -58,8 +60,8 @@ class IntroPage2 extends StatelessWidget {
             _buildProcedureCard(
               context,
               icon: Icons.psychology,
-              title: "Alteração da Consciência",
-              description: "Manejo de pacientes inconscientes",
+              title: l10n.consciousnessAlteration,
+              description: l10n.consciousnessDescription,
             ),
           ],
         ),
