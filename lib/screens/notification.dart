@@ -210,7 +210,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                         ? const Color(0xFF1976D2).withOpacity(0.5)
                         : Colors.blue[700]?.withOpacity(0.5),
                   ),
-                  const Divider(height: 1),
+                  const Divider(),
                   SwitchListTile(
                     title: Text(
                       l10n.vibration,

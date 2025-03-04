@@ -76,7 +76,33 @@ flutter:
   # the material Icons class.
   generate: true
   uses-material-design: true
+  assets:
+    - assets/images/alteracao_da_consciencia.png
+    - assets/images/emergencias_neurologicas.png
+    - assets/images/equipamentos_emergencia.png
+    - assets/images/kit_emergencia.png
+    - assets/images/medicamentos_emergencia.png
+    - assets/images/praticas_emergencias_medicas.png
+    - assets/images/reacoes_alergicas.png
+    - assets/images/sbv.png
+    - assets/images/sistema_cardiovascular.png
+    - assets/images/sistema_respiratorio.png
+    - assets/images/sos.png
+    - assets/images/todas_emergencias.png
+    - assets/images/sistemas_cardiovascular_branco.png
+    - assets/images/sistema_respiratorio_branco.png
+    - assets/images/alteracao_conscienia_branco.png
+    - assets/images/angina1.png
+    - assets/images/angina2.png
+    - assets/images/angina3.png
+    - assets/images/angina4.png
+    - assets/images/angina5.png
+    - assets/images/angina6.png
+    - assets/images/angina8.png
+    - assets/images/angina9.png
+    - assets/images/angina10.png
 
+    
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

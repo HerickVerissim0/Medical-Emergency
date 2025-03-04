@@ -16,12 +16,11 @@ import 'package:flutter_application_1/screens/sbv.dart';
 import 'package:flutter_application_1/screens/search_icon.dart';
 import 'package:flutter_application_1/screens/sistema_cardiaco.dart';
 import 'package:flutter_application_1/screens/sistema_respiratorio.dart';
+import 'package:flutter_application_1/screens/todas_emergencias.dart';
 import 'package:flutter_application_1/generated/l10n/app_localizations.dart';
 
 class HomeScreen extends StatelessWidget {
-  static const double _iconSize = 50.0;
-  static const TextStyle _labelStyle =
-      TextStyle(fontSize: 18, fontWeight: FontWeight.w500);
+  static const double _imageHeight = 150.0; // Altura da imagem
 
   const HomeScreen({super.key});
 
@@ -64,84 +63,70 @@ class HomeScreen extends StatelessWidget {
                 crossAxisCount: 3, // Quantidade de colunas
                 crossAxisSpacing: 2,
                 mainAxisSpacing: 10,
+                childAspectRatio:
+                    0.8, // Ajuste a proporção para aumentar a altura
                 children: [
-                  _buildIcon(
+                  _buildImage(
                       context,
-                      Icons.sentiment_very_dissatisfied,
+                      'assets/images/emergencias_neurologicas.png',
                       AppLocalizations.of(context)!
                           .fearAnxiety, // Usando string localizada
-                      const MedoAnsiedadeScreen(),
-                      Colors.blue),
-                  _buildIcon(
+                      const MedoAnsiedadeScreen()),
+                  _buildImage(
                       context,
-                      Icons.favorite,
-                      AppLocalizations.of(context)!
-                          .cardiacSystem, // Usando string localizada
-                      const SistemaCardiacoScreen(),
-                      Colors.blue),
-                  _buildIcon(
+                      'assets/images/sistema_cardiovascular.png',
+                      '${AppLocalizations.of(context)!.cardiacSystem.replaceAll(" ", "\n")}', // Sistema\nCardíaco
+                      const SistemaCardiacoScreen()),
+                  _buildImage(
                       context,
-                      Icons.air,
-                      AppLocalizations.of(context)!
-                          .respiratorySystem, // Usando string localizada
-                      const SistemaRespiratorioScreen(),
-                      Colors.blue),
-                  _buildIcon(
+                      'assets/images/sistema_respiratorio.png',
+                      '${AppLocalizations.of(context)!.respiratorySystem.replaceAll(" ", "\n")}', // Sistema\nRespiratório
+                      const SistemaRespiratorioScreen()),
+                  _buildImage(
                       context,
-                      Icons.warning,
-                      AppLocalizations.of(context)!
-                          .allergicReaction, // Usando string localizada
-                      const ReacaoAlergica(),
-                      Colors.blue),
-                  _buildIcon(
+                      'assets/images/reacoes_alergicas.png',
+                      '${AppLocalizations.of(context)!.allergicReaction.replaceAll(" ", "\n")}', // Reação\nAlérgica
+                      const ReacaoAlergica()),
+                  _buildImage(
                       context,
-                      Icons.contacts,
-                      AppLocalizations.of(context)!
-                          .emergencyContacts, // Usando string localizada
-                      const ContatosEmergencia(),
-                      Colors.red),
-                  _buildIcon(
+                      'assets/images/sos.png',
+                      '', // Adicionando quebra de linha entre as palavras
+                      const ContatosEmergencia()),
+                  _buildImage(
                       context,
-                      Icons.psychology,
-                      AppLocalizations.of(context)!
-                          .consciousnessAlteration, // Usando string localizada
-                      const AlteracaoConsciencia(),
-                      Colors.blue),
-                  _buildIcon(
+                      'assets/images/alteracao_da_consciencia.png',
+                      'Alteração da\nConsciência', // Alteração da\nConsciência
+                      const AlteracaoConsciencia()),
+                  _buildImage(
                       context,
-                      Icons.medical_services_outlined,
-                      AppLocalizations.of(context)!
-                          .medications, // Usando string localizada
-                      const Medicamentos(),
-                      Colors.red),
-                  _buildIcon(
+                      'assets/images/medicamentos_emergencia.png',
+                      'Medicamentos\nde Emergência', // Medicamentos\nde Emergência
+                      const Medicamentos()),
+                  _buildImage(
                       context,
-                      Icons.devices_other,
-                      AppLocalizations.of(context)!
-                          .emergencyEquipment, // Usando string localizada
-                      EquipamentosEmergencia(),
-                      Colors.red),
-                  _buildIcon(
+                      'assets/images/equipamentos_emergencia.png',
+                      'Equipamentos\nde Emergência', // Equipamentos\nde Emergência
+                      EquipamentosEmergencia()),
+                  _buildImage(
                       context,
-                      Icons.healing,
-                      AppLocalizations.of(context)!
-                          .emergencyKit, // Usando string localizada
-                      KitEmergencia(),
-                      Colors.red),
-                  _buildIcon(
+                      'assets/images/kit_emergencia.png',
+                      'Kit\nde Emergência', // Kit\nde Emergência
+                      KitEmergencia()),
+                  _buildImage(
                       context,
-                      Icons.medical_services,
-                      AppLocalizations.of(context)!
-                          .sbv, // Usando string localizada
-                      Sbv(),
-                      Colors.red),
-                  _buildIcon(
+                      'assets/images/sbv.png',
+                      '', // SBV
+                      Sbv()),
+                  _buildImage(
                       context,
-                      Icons.video_collection,
-                      AppLocalizations.of(context)!
-                          .medicalEmergencies, // Usando string localizada
-                      PraticasMedicas(),
-                      Colors.red),
+                      'assets/images/praticas_emergencias_medicas.png',
+                      '${AppLocalizations.of(context)!.medicalEmergencies.replaceAll(" ", "\n")}', // Práticas\nem Emergências Médicas
+                      PraticasMedicas()),
+                  _buildImage(
+                      context,
+                      'assets/images/todas_emergencias.png', // Caminho da imagem para Todas Emergências
+                      'Todas\nEmergências', // Texto para a imagem
+                      const TodasEmergencias()), // Navegação para a nova tela
                 ],
               ),
             ),
@@ -152,8 +137,8 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildIcon(BuildContext context, IconData icon, String label,
-      Widget targetScreen, Color iconColor) {
+  Widget _buildImage(BuildContext context, String imagePath, String label,
+      Widget targetScreen) {
     final theme = Theme.of(context);
     return GestureDetector(
       onTap: () {
@@ -173,27 +158,41 @@ class HomeScreen extends StatelessWidget {
           );
         }
       },
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Icon(
-            icon,
-            size: _iconSize,
-            color: iconColor,
-          ),
-          const SizedBox(height: 10),
-          Text(
-            label,
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.w500,
-              color: theme.brightness == Brightness.dark
-                  ? Colors.white
-                  : Colors.black,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(
+            15.0), // Ajuste o valor para o arredondamento desejado
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            Image.asset(
+              imagePath,
+              fit: BoxFit.cover, // Ajuste para cobrir o espaço
+              height: _imageHeight, // Altura da imagem
+              width: double.infinity, // Largura total
             ),
-            textAlign: TextAlign.center,
-          ),
-        ],
+            Positioned(
+              bottom: 10, // Ajuste a posição vertical do texto
+              child: Container(
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 8.0), // Adiciona padding horizontal
+                child: Text(
+                  label,
+                  style: TextStyle(
+                    fontSize: 14, // Ajuste o tamanho da fonte se necessário
+                    fontWeight: FontWeight.w500,
+                    color: theme.brightness == Brightness.dark
+                        ? Colors.white
+                        : Colors.black,
+                  ),
+                  textAlign: TextAlign.center,
+                  maxLines: 2, // Permite até 2 linhas
+                  overflow: TextOverflow
+                      .ellipsis, // Adiciona reticências se o texto for muito longo
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
